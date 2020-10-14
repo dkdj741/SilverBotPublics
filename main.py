@@ -174,8 +174,8 @@ class AuraBot(commands.Bot):
                 print(f"Declined friend request from: {pending.display_name}.")
 
     async def event_party_invite(self, invite: fortnitepy.ReceivedPartyInvitation) -> None:
-        await invite.accept()
-        print(f'Accepted party invite from {invite.sender.display_name}.')
+        await invite.decline()
+        print(f'Declined party invite from {invite.sender.display_name}.')
 
     async def event_friend_request(self, request: fortnitepy.IncomingPendingFriend) -> None:
         print(f"Received friend request from: {request.display_name}.")
