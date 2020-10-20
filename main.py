@@ -1,3 +1,5 @@
+import os
+os.system("python3 webserver.py &")
 import asyncio
 import os
 import uvloop
