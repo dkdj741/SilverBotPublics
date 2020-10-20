@@ -1,5 +1,3 @@
-import os
-os.system("python3 webserver.py &")
 import asyncio
 import os
 import uvloop
@@ -49,7 +47,7 @@ except ModuleNotFoundError as e:
 
 
 print(crayons.cyan(f'\nThank you for using silverbot'))
-print(crayons.cyan(f'Discord server: https://discord.gg/8KDB4mp - For support, questions, etc.'))
+print(crayons.cyan(f'Discord server: https://discord.gg/by9FqaU - For support, questions, etc.'))
 
 sanic_app = sanic.Sanic(__name__)
 server = None
@@ -103,7 +101,7 @@ async def get_authorization_code():
 
 class AuraBot(commands.Bot):
     def __init__(self, email : str, password : str, **kwargs) -> None:
-        self.status = '🔥discord.gg/8KDB4mp🔥'
+        self.status = '🔥discord.gg/by9FqaU🔥'
         self.kairos = 'cid_028_ff2b06cf446376144ba408d3482f5c982bf2584cf0f508ee3e4ba4a0fd461a38'
         device_auth_details = get_device_auth_details().get(email, {})
         super().__init__(
@@ -138,8 +136,8 @@ class AuraBot(commands.Bot):
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Welcome {DISPLAY_NAME} Make sure to join the discord discord.gg/8KDB4mp and for your own bot visit rebrand.ly/silverbot"
-        self.whisper_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/8KDB4mp and for your own bot visit rebrand.ly/silverbot"
+        self.welcome_message = "Thank You For Using SilverBot {DISPLAY_NAME} For Your Own Bot rebrand.ly/silverbot and Visit My Tiktok @dkdj741 and my twitch at twitch.tv/mxnty999 and go drop a follow and join our discord server over at discord.gg/by9FqaU Thanks For The Support!"
+        self.whisper_message = "Thank You For Using SilverBot {DISPLAY_NAME} For Your Own Bot rebrand.ly/silverbot and Visit My Tiktok @dkdj741 and my twitch at twitch.tv/mxnty999 and go drop a follow and join our discord server over at discord.gg/by9FqaU Thanks For The Support!"
 
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
